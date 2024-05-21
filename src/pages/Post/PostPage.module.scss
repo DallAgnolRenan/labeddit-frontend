@@ -1,18 +1,31 @@
-/* src/components/PostCard.module.scss */
-.postCard {
+/* src/pages/Post/PostPage.module.scss */
+.postContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postDetails {
   width: 90%;
   max-width: 600px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 1rem 0;
+  margin-bottom: 2rem;
   padding: 1rem;
   text-align: left;
 }
 
-.createPost {
+.commentsSection {
+  width: 90%;
+  max-width: 600px;
+}
+
+.newComment {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .textarea {
@@ -25,7 +38,7 @@
   border-radius: 4px;
 }
 
-.postButton {
+.commentButton {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   color: #ffffff;
   padding: 0.75rem;
